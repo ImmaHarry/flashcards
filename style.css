@@ -1,0 +1,199 @@
+@import url(//fonts.googleapis.com/earlyaccess/jejugothic.css);
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Jeju Gothic', sans-serif;
+}
+
+body {
+    background-color: #FFE49F;
+}
+
+.pageHeader {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 3rem;
+    margin-top: 1rem;
+}
+
+.formCent {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 1rem;
+}
+
+.flashCardform {
+    border: solid black 3px;
+    background-color: white;
+    width: fit-content;
+    padding: 25px;
+    border-radius: 10px;
+}
+
+.formQuestion, .formAnswer {
+    margin-bottom: 8px;
+    font-size: 2rem;
+}
+
+.answerBox, .questionBox {
+    border: solid black 2px;
+    border-radius: 10px;
+    resize: none;
+    font-size: 1rem;
+    padding: 10px;
+}
+
+.addButton, .clearForm {
+    width: 2.5rem;
+    height: 2.5rem;
+    border: solid black 2px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    transition: all, 0.25s, ease;
+}
+
+.addButton {
+    background-color: rgb(31, 208, 31);
+}
+
+.addButton:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(43, 182, 43);
+}
+.clearForm:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+    background-color: rgb(249, 35, 35);
+}
+
+.clearForm {
+    background-color: rgb(233, 52, 52);
+}
+
+
+.questionFCD {
+    background-color: white;
+    width: fit-content;
+    padding: 25px;
+    border: black solid 3px;
+    border-radius: 10px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 1rem;
+}
+
+.cardQ {
+    font-size: 2rem;
+}
+
+.qCardBox {
+    background-color: white;
+    border: solid black 2px;
+    border-radius: 10px;
+    resize: none;
+    font-size: 1rem;
+    padding: 10px;
+    color: black;
+    margin: 10px 0 10px 0;
+}
+
+.cardBTNS button {
+    font-size: 1rem;
+    width: 140px;
+    margin: 2px;
+    padding: 2px;
+    text-align: left;
+    border: black solid 1px;
+    background-color: white;
+    border-radius: 5px;
+    transition: 0.1s, all, ease;
+}
+
+.cardBTNS button:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+    transform: scale(1.05);
+}
+
+.editQ {
+    display: none;
+}
+.visible {
+    display: block;
+    background-color: antiquewhite;
+}
+
+.ANSmodal {
+    display: none   ; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.5); /* Black w/ opacity */
+}
+
+.hidden {
+    display: block;
+}
+
+
+.modal-content {
+background-color: white;
+margin: 15% auto; /* 15% from the top and centered */
+padding: 20px;
+border: solid black 3px;
+border-radius: 10px;
+width: 80%; /* Could be more or less, depending on screen size */
+}
+
+.closeBTN {
+    background-color: white;
+    font-size: 1.25rem;
+    border: none;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.closeBTN:hover, .narrate:hover {
+    background-color: black;
+    color: white;
+    cursor: pointer;
+}
+.answerMDL {
+    font-size: 2.5rem;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.answerTXT {
+    font-size: 1.5rem;
+}
+
+.narrate {
+    font-size: 1.5rem;
+    background-color: white;
+    border: none;
+    margin-top: 10px;
+    padding: 8px;
+    border-radius: 10px;
+}
+
+.footer {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 1rem;
+}
+
+a:visited {
+    color: black;
+}
